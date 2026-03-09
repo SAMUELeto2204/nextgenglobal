@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>NextGen Global Initiatives Inc.</title>
+<title>NextGen Global Initiatives Inc</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
+margin:0;
+font-family:Arial, sans-serif;
 background:#ffffff;
 color:#333;
 }
 
-<body>
+/* HEADER */
 
-<header>
-<div class="logo-container">
-<img src="logo.png.png" alt="NextGen Logo">
-<h1>NextGen Global Initiatives Inc</h1>
-</div>
-</header>
-
-</body>
-
-
-    
+header{
+background:white;
+padding:15px 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid #eee;
 }
-    </div>
-</section>
 
-.logo img{
-height:150px;
+.logo-container{
+display:flex;
+align-items:center;
+gap:15px;
 }
+
+.logo-container img{
+height:70px;
 }
+
+.logo-container h1{
+font-size:22px;
 color:#1b5e20;
+margin:0;
 }
+
+/* NAVIGATION */
 
 nav a{
 margin-left:25px;
@@ -53,20 +51,20 @@ font-weight:500;
 }
 
 nav a:hover{
-color:#2e7d32;
+color:#1b5e20;
 }
 
 /* HERO */
 
 .hero{
-background:#2e7d32;
+background:#1b5e20;
 color:white;
-text-align:center;
 padding:120px 20px;
+text-align:center;
 }
 
-.hero h1{
-font-size:48px;
+.hero h2{
+font-size:40px;
 margin-bottom:20px;
 }
 
@@ -76,71 +74,31 @@ max-width:700px;
 margin:auto;
 }
 
-.button{
-display:inline-block;
-margin-top:30px;
-padding:14px 30px;
-background:white;
-color:#2e7d32;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
-}
-
-/* SECTIONS */
+/* PROGRAMS */
 
 .section{
-padding:90px 20px;
-max-width:1100px;
-margin:auto;
+padding:80px 20px;
 text-align:center;
 }
 
 .section h2{
-color:#2e7d32;
-margin-bottom:20px;
-font-size:34px;
+color:#1b5e20;
+font-size:32px;
+margin-bottom:40px;
 }
 
-/* PROGRAMS */
-
-.program-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+.programs{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 gap:30px;
-margin-top:40px;
 }
 
 .card{
+width:280px;
+padding:25px;
+border-radius:10px;
 background:#f7f7f7;
-padding:30px;
-border-radius:8px;
-}
-
-.card h3{
-color:#2e7d32;
-margin-bottom:10px;
-}
-
-/* DAYCARE SECTION */
-
-.daycare{
-background:#f0f7f2;
-padding:80px 20px;
-text-align:center;
-}
-
-.daycare h2{
-color:#2e7d32;
-}
-
-/* CONTACT */
-
-.contact{
-background:#2e7d32;
-color:white;
-padding:80px 20px;
-text-align:center;
 }
 
 /* FOOTER */
@@ -149,7 +107,8 @@ footer{
 background:#1b5e20;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
+margin-top:60px;
 }
 
 </style>
@@ -159,47 +118,29 @@ padding:25px;
 
 <header>
 
-<div class="logo">
-    <img src="logo.png" alt="NextGen Logo">
-    <span>NextGen Global Initiatives Inc</span>
+<div class="logo-container">
+<img src="logo.png.png" alt="NextGen Logo">
+<h1>NextGen Global Initiatives Inc</h1>
 </div>
 
 <nav>
-
 <a href="#">Home</a>
 <a href="#">About</a>
 <a href="#">Programs</a>
 <a href="#">Daycare</a>
 <a href="#">Contact</a>
-
 </nav>
 
 </header>
 
 <section class="hero">
 
-<h1>Nurturing the Next Generation</h1>
+<h2>Empowering Communities. Transforming Futures.</h2>
 
 <p>
-NextGen Global Initiatives Inc. is dedicated to empowering children,
-supporting families, and strengthening communities through education,
-childcare, and impactful community programs.
-</p>
-
-<a class="button">Enroll in Daycare</a>
-
-</section>
-
-<section class="section">
-
-<h2>About NextGen</h2>
-
-<p>
-NextGen Global Initiatives Inc. is a community-focused organization
-committed to nurturing young minds and building stronger families.
-Through quality childcare, educational programs, and community
-initiatives, we create opportunities for children to grow,
-learn, and thrive.
+NextGen Global Initiatives Inc is committed to empowering families,
+supporting youth development, promoting education, and strengthening
+communities through innovative programs and partnerships.
 </p>
 
 </section>
@@ -208,76 +149,30 @@ learn, and thrive.
 
 <h2>Our Programs</h2>
 
-<div class="program-grid">
+<div class="programs">
 
 <div class="card">
-
-<h3>Childcare & Daycare</h3>
-
-<p>
-Safe, nurturing childcare environments designed to support
-early childhood development.
-</p>
-
+<h3>Child Care Services</h3>
+<p>Providing safe and nurturing daycare programs for young children.</p>
 </div>
 
 <div class="card">
-
-<h3>Early Learning</h3>
-
-<p>
-Play-based educational programs that prepare children
-for success in school and life.
-</p>
-
+<h3>Youth Development</h3>
+<p>Mentorship and leadership programs designed for young people.</p>
 </div>
 
 <div class="card">
-
-<h3>Community Support</h3>
-
-<p>
-Programs that strengthen families, empower youth,
-and build healthier communities.
-</p>
-
+<h3>Community Outreach</h3>
+<p>Programs focused on strengthening families and community engagement.</p>
 </div>
 
 </div>
-
-</section>
-
-<section class="daycare">
-
-<h2>NextGen Daycare</h2>
-
-<p>
-Our daycare program provides a safe and engaging
-environment where children learn through play,
-creativity, and social interaction.
-</p>
-
-<a class="button">Apply for Enrollment</a>
-
-</section>
-
-<section class="contact">
-
-<h2>Contact Us</h2>
-
-<p>
-
-NextGen Global Initiatives Inc.<br>
-Saskatoon, Saskatchewan<br>
-Phone: 306-280-8715
-
-</p>
 
 </section>
 
 <footer>
 
-© 2026 NextGen Global Initiatives Inc.
+<p>© 2026 NextGen Global Initiatives Inc</p>
 
 </footer>
 
