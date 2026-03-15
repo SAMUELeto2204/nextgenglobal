@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,11 +16,27 @@ margin:0;
 background:#f5f5f5;
 }
 
-/* HERO SECTION */
+/* NAVIGATION */
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#2e7d32;
+font-weight:bold;
+}
+
+/* HERO */
 
 .hero{
 height:420px;
-background:url("daycare-hero.jpg.jpg");
+background:url("daycare-hero.jpg");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -36,7 +53,7 @@ border-radius:10px;
 }
 
 .hero h1{
-font-size:42px;
+font-size:40px;
 margin-bottom:10px;
 }
 
@@ -48,10 +65,10 @@ margin-bottom:20px;
 .hero button{
 background:#2e7d32;
 color:white;
-border:none;
 padding:12px 25px;
-font-size:16px;
+border:none;
 border-radius:6px;
+font-size:16px;
 cursor:pointer;
 }
 
@@ -59,7 +76,7 @@ cursor:pointer;
 background:#1b5e20;
 }
 
-/* SECTION STYLE */
+/* SECTIONS */
 
 .section{
 padding:60px 20px;
@@ -91,7 +108,7 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
-/* BUTTONS */
+/* BUTTON */
 
 .button{
 background:#2e7d32;
@@ -122,6 +139,16 @@ text-align:center;
 
 <body>
 
+<nav>
+
+<a href="#">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#register">Register</a>
+<a href="#waitlist">Waitlist</a>
+<a href="about.html">NextGen</a>
+
+</nav>
+
 <!-- HERO -->
 
 <section class="hero">
@@ -147,9 +174,9 @@ text-align:center;
 <h2>About Our Daycare</h2>
 
 <p>
-NextGen Daycare provides a warm and nurturing environment where children
-learn through play, creativity and exploration. Our programs support
-early childhood development while helping families in Saskatoon.
+NextGen Daycare provides a safe, nurturing and play-based
+learning environment where children grow, explore and develop
+important early childhood skills.
 </p>
 
 </section>
@@ -162,10 +189,10 @@ early childhood development while helping families in Saskatoon.
 
 <div class="gallery">
 
-<img src="gallery1.jpg.jpg">
-<img src="gallery2.jpg.jpg">
-<img src="gallery3.jpg.jpg">
-<img src="gallery4.jpg.jpg">
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
 
 </div>
 
@@ -179,7 +206,7 @@ early childhood development while helping families in Saskatoon.
 
 <p>Click below to complete our daycare registration form.</p>
 
-<a href="PASTE-YOUR-GOOGLE-FORM-LINK-HERE" target="_blank">
+<a href="PASTE-YOUR-GOOGLE-FORM-LINK" target="_blank">
 
 <button class="button">Register Your Child</button>
 
@@ -193,9 +220,9 @@ early childhood development while helping families in Saskatoon.
 
 <h2>Join Our Waitlist</h2>
 
-<p>If spaces are full, please join our waitlist and we will contact you.</p>
+<p>If spaces are full, please join our waitlist.</p>
 
-<a href="PASTE-YOUR-WAITLIST-FORM-LINK-HERE" target="_blank">
+<a href="PASTE-YOUR-WAITLIST-FORM-LINK" target="_blank">
 
 <button class="button">Join Waitlist</button>
 
@@ -211,11 +238,9 @@ early childhood development while helping families in Saskatoon.
 
 <p>NextGen Daycare</p>
 
-<p>237 Fehereghazi Blvd, Saskatoon, Saskatchewan</p>
+<p>Saskatoon, Saskatchewan</p>
 
 <p>Phone: 306-280-8715</p>
-
-<p>Operated by NextGen Global Initiatives Inc.</p>
 
 </section>
 
