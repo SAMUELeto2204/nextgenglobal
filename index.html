@@ -2,118 +2,71 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NextGen Global Initiatives Inc</title>
+<title>NextGen Daycare | Saskatoon</title>
 
 <style>
 
-html{
-scroll-behavior:smooth;
-font-family:Arial, sans-serif;
-}
-
 body{
+font-family: Arial, sans-serif;
 margin:0;
-background:white;
-color:#333;
+background:#f5f5f5;
 }
 
-/* HEADER */
-
-header{
-text-align:center;
-padding:20px;
-border-bottom:1px solid #eee;
-}
-
-.logo img{
-height:200px;
-}
-
-nav{
-margin-top:10px;
-}
-
-nav a{
-margin:0 15px;
-text-decoration:none;
-color:#333;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#2e7d32;
-}
-
-/* HERO */
+/* HERO SECTION */
 
 .hero{
-background:#2e7d32;
-color:white;
-padding:70px 20px;
+height:420px;
+background:url("daycare-hero.jpg.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+color:white;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.4);
+padding:40px;
+border-radius:10px;
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 margin-bottom:10px;
 }
 
 .hero p{
 font-size:18px;
+margin-bottom:20px;
 }
 
-/* SECTIONS */
+.hero button{
+background:#2e7d32;
+color:white;
+border:none;
+padding:12px 25px;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#1b5e20;
+}
+
+/* SECTION STYLE */
 
 .section{
-padding:40px 20px;
+padding:60px 20px;
 text-align:center;
-}
-
-/* CARDS */
-
-.programs{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:25px;
-}
-
-.card{
-background:#f4f4f4;
-padding:25px;
-width:260px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 20px rgba(0,0,0,0.15);
-}
-
-/* LEADERSHIP */
-
-.team{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:40px;
-}
-
-.team-card{
-width:320px;
-}
-
-.team-card img{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:10px;
+background:white;
+margin:20px;
+border-radius:8px;
 }
 
 /* GALLERY */
@@ -127,7 +80,7 @@ margin-top:20px;
 }
 
 .gallery img{
-width:250px;
+width:260px;
 height:180px;
 object-fit:cover;
 border-radius:10px;
@@ -138,42 +91,29 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
-/* FORM */
+/* BUTTONS */
 
-form{
-max-width:500px;
-margin:auto;
-}
-
-input, textarea{
-width:100%;
-padding:10px;
-margin:8px 0;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
+.button{
 background:#2e7d32;
 color:white;
-padding:12px 20px;
+padding:12px 25px;
 border:none;
 border-radius:6px;
+font-size:16px;
 cursor:pointer;
 }
 
-button:hover{
+.button:hover{
 background:#1b5e20;
 }
 
-/* FOOTER */
+/* CONTACT */
 
-footer{
+.contact{
 background:#2e7d32;
 color:white;
-padding:20px;
+padding:40px;
 text-align:center;
-margin-top:40px;
 }
 
 </style>
@@ -182,177 +122,103 @@ margin-top:40px;
 
 <body>
 
-<header>
-
-<div class="logo">
-<img src="logo.png" alt="NextGen Logo">
-</div>
-
-<nav>
-
-<a href="#">Home</a>
-<a href="#mission">Mission</a>
-<a href="#programs">Programs</a>
-<a href="#leadership">Leadership</a>
-<a href="daycare.html">Daycare</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-</header>
+<!-- HERO -->
 
 <section class="hero">
 
-<h1>NextGen Global Initiatives Inc</h1>
+<div class="hero-text">
 
-<p>Empowering Children, Supporting Families, Building Strong Communities</p>
+<h1>NextGen Daycare</h1>
 
-</section>
+<p>Safe • Nurturing • Play-Based Early Learning in Saskatoon</p>
 
-<section class="section" id="mission">
-
-<h2>Mission & Vision</h2>
-
-<div class="programs">
-
-<div class="card">
-
-<h3>Our Mission</h3>
-
-<p>
-To empower children and families through quality childcare,
-education, and community programs that strengthen
-families and communities.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Our Vision</h3>
-
-<p>
-To build thriving communities where children grow in safe,
-nurturing environments that support learning and creativity.
-</p>
-
-</div>
+<a href="#register">
+<button>Enroll Now</button>
+</a>
 
 </div>
 
 </section>
 
-<section class="section" id="programs">
+<!-- ABOUT -->
 
-<h2>Our Programs</h2>
+<section class="section">
 
-<div class="programs">
-
-<div class="card">
-
-<h3>Early Childhood Development</h3>
+<h2>About Our Daycare</h2>
 
 <p>
-Supporting children's learning and growth through
-play-based early childhood education programs.
+NextGen Daycare provides a warm and nurturing environment where children
+learn through play, creativity and exploration. Our programs support
+early childhood development while helping families in Saskatoon.
 </p>
 
-</div>
+</section>
 
-<div class="card">
+<!-- GALLERY -->
 
-<h3>Family Support</h3>
+<section class="section" id="gallery">
 
-<p>
-Providing resources and support that help families
-build strong foundations for children.
-</p>
+<h2>Photo Gallery</h2>
 
-</div>
+<div class="gallery">
 
-<div class="card">
-
-<h3>Community Engagement</h3>
-
-<p>
-Connecting families and communities through
-education programs and outreach initiatives.
-</p>
-
-</div>
+<img src="gallery1.jpg.jpg">
+<img src="gallery2.jpg.jpg">
+<img src="gallery3.jpg.jpg">
+<img src="gallery4.jpg.jpg">
 
 </div>
 
 </section>
 
-<section class="section" id="leadership">
+<!-- REGISTRATION -->
 
-<h2>Leadership</h2>
+<section class="section" id="register">
 
-<div class="team">
+<h2>Daycare Registration</h2>
 
-<div class="team-card">
+<p>Click below to complete our daycare registration form.</p>
 
-<img src="mary.jpg">
+<a href="PASTE-YOUR-GOOGLE-FORM-LINK-HERE" target="_blank">
 
-<h3>Mary Abiola Adeagbo</h3>
+<button class="button">Register Your Child</button>
 
-<p><strong>Executive Director</strong></p>
-
-<p>
-Early childhood educator and nutritionist. Founder of
-Caring Sprout Daycare in Saskatoon. She holds an
-Early Childhood Education certification from SaskPolytechnic.
-</p>
-
-</div>
-
-<div class="team-card">
-
-<img src="samuel.jpg.jpg">
-
-<h3>Oluwaseun Adeagbo</h3>
-
-<p><strong>Operations Manager</strong></p>
-
-<p>
-Oluwaseun Adeagbo oversees operations and program
-development. He also holds an Early Childhood Education
-certification from SaskPolytechnic.
-</p>
-
-</div>
-
-</div>
+</a>
 
 </section>
 
-<section class="section" id="contact">
+<!-- WAITLIST -->
+
+<section class="section" id="waitlist">
+
+<h2>Join Our Waitlist</h2>
+
+<p>If spaces are full, please join our waitlist and we will contact you.</p>
+
+<a href="PASTE-YOUR-WAITLIST-FORM-LINK-HERE" target="_blank">
+
+<button class="button">Join Waitlist</button>
+
+</a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
 
 <h2>Contact Us</h2>
 
-<p><strong>NextGen Global Initiatives Inc</strong></p>
+<p>NextGen Daycare</p>
 
-<p>
-237 Fehereghazi Blvd<br>
-Saskatoon, Saskatchewan
-</p>
+<p>237 Fehereghazi Blvd, Saskatoon, Saskatchewan</p>
 
-<p>
-Phone: <a href="tel:13062808715">+1 306-280-8715</a>
-</p>
+<p>Phone: 306-280-8715</p>
 
-<p>
-Email: info@nextgenglobal.ca
-</p>
+<p>Operated by NextGen Global Initiatives Inc.</p>
 
 </section>
 
-<footer>
-
-<p>© 2026 NextGen Global Initiatives Inc</p>
-
-</footer>
-
 </body>
+
 </html>
