@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,7 +15,7 @@ margin:0;
 background:#f4f4f4;
 }
 
-/* HEADER */
+/* HEADER LOGO */
 
 header{
 text-align:center;
@@ -43,44 +42,63 @@ margin:0 15px;
 font-weight:bold;
 }
 
-/* HERO */
+/* HERO SLIDER */
 
-.hero{
+.hero-slider{
+position:relative;
 height:420px;
-background:url("daycare-hero.jpg.jpg");
-background-size:cover;
-background-position:center;
+overflow:hidden;
+}
+
+.slides{
 display:flex;
-align-items:center;
-justify-content:center;
+width:300%;
+animation:slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.4);
+padding:40px;
+border-radius:10px;
 text-align:center;
 color:white;
 }
 
-.hero-text{
-background:rgba(0,0,0,0.4);
-padding:40px;
-border-radius:10px;
-}
-
-.hero h1{
+.hero-text h1{
 font-size:40px;
 margin-bottom:10px;
 }
 
-.hero p{
-font-size:18px;
+.hero-text p{
 margin-bottom:20px;
 }
 
-.hero button{
+.hero-text button{
 background:#2e7d32;
 color:white;
 padding:12px 25px;
 border:none;
 border-radius:6px;
-font-size:16px;
 cursor:pointer;
+}
+
+@keyframes slide{
+
+0%{transform:translateX(0);}
+33%{transform:translateX(-100%);}
+66%{transform:translateX(-200%);}
+100%{transform:translateX(0);}
+
 }
 
 /* SECTIONS */
@@ -139,9 +157,7 @@ text-align:center;
 <!-- LOGO -->
 
 <header>
-
 <img src="logo.png" alt="NextGen Logo">
-
 </header>
 
 <!-- MENU -->
@@ -156,9 +172,17 @@ text-align:center;
 
 </nav>
 
-<!-- HERO -->
+<!-- HERO SLIDER -->
 
-<section class="hero">
+<section class="hero-slider">
+
+<div class="slides">
+
+<img src="slide1.jpg.jpg">
+<img src="slide2.jpg.jpg">
+<img src="slide3.jpg.jpg">
+
+</div>
 
 <div class="hero-text">
 
@@ -174,16 +198,16 @@ text-align:center;
 
 </section>
 
-<!-- ABOUT DAYCARE -->
+<!-- ABOUT -->
 
 <section class="section">
 
 <h2>About Our Daycare</h2>
 
 <p>
-NextGen Daycare provides a safe, nurturing and play-based learning
-environment where children grow, explore and develop important
-early childhood skills.
+NextGen Daycare provides a safe and nurturing environment where children
+learn through play, creativity, and exploration while developing
+important early childhood skills.
 </p>
 
 </section>
@@ -213,10 +237,8 @@ early childhood skills.
 
 <p>Click below to complete our daycare registration form.</p>
 
-<a href="PASTE-YOUR-GOOGLE-FORM-LINK" target="_blank">
-
+<a href="PASTE-GOOGLE-FORM-LINK" target="_blank">
 <button class="button">Register Your Child</button>
-
 </a>
 
 </section>
@@ -229,10 +251,8 @@ early childhood skills.
 
 <p>If spaces are full, please join our waitlist.</p>
 
-<a href="PASTE-YOUR-WAITLIST-FORM-LINK" target="_blank">
-
+<a href="PASTE-WAITLIST-FORM-LINK" target="_blank">
 <button class="button">Join Waitlist</button>
-
 </a>
 
 </section>
