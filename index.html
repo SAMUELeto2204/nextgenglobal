@@ -13,22 +13,33 @@
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
+background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:20px;
+background:white;
+}
+
+header img{
+height:90px;
 }
 
 /* NAVIGATION */
 
 nav{
-background:white;
+background:#2e7d32;
 padding:15px;
 text-align:center;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a{
-margin:0 15px;
+color:white;
 text-decoration:none;
-color:#2e7d32;
+margin:0 15px;
 font-weight:bold;
 }
 
@@ -36,7 +47,7 @@ font-weight:bold;
 
 .hero{
 height:420px;
-background:url("daycare-hero.jpg.jpg");
+background:url("daycare-hero.jpg");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -72,10 +83,6 @@ font-size:16px;
 cursor:pointer;
 }
 
-.hero button:hover{
-background:#1b5e20;
-}
-
 /* SECTIONS */
 
 .section{
@@ -93,7 +100,6 @@ display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:20px;
-margin-top:20px;
 }
 
 .gallery img{
@@ -101,11 +107,6 @@ width:260px;
 height:180px;
 object-fit:cover;
 border-radius:10px;
-transition:0.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
 }
 
 /* BUTTON */
@@ -118,10 +119,6 @@ border:none;
 border-radius:6px;
 font-size:16px;
 cursor:pointer;
-}
-
-.button:hover{
-background:#1b5e20;
 }
 
 /* CONTACT */
@@ -138,6 +135,16 @@ text-align:center;
 </head>
 
 <body>
+
+<!-- LOGO -->
+
+<header>
+
+<img src="logo.png" alt="NextGen Logo">
+
+</header>
+
+<!-- MENU -->
 
 <nav>
 
@@ -167,16 +174,16 @@ text-align:center;
 
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT DAYCARE -->
 
 <section class="section">
 
 <h2>About Our Daycare</h2>
 
 <p>
-NextGen Daycare provides a safe, nurturing and play-based
-learning environment where children grow, explore and develop
-important early childhood skills.
+NextGen Daycare provides a safe, nurturing and play-based learning
+environment where children grow, explore and develop important
+early childhood skills.
 </p>
 
 </section>
@@ -189,10 +196,10 @@ important early childhood skills.
 
 <div class="gallery">
 
-<img src="gallery1.jpg.jpg">
-<img src="gallery2.jpg.jpg">
-<img src="gallery3.jpg.jpg">
-<img src="gallery4.jpg.jpg">
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
 
 </div>
 
@@ -241,6 +248,8 @@ important early childhood skills.
 <p>Saskatoon, Saskatchewan</p>
 
 <p>Phone: 306-280-8715</p>
+
+<p>Operated by NextGen Global Initiatives Inc.</p>
 
 </section>
 
