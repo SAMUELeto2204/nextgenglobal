@@ -15,12 +15,12 @@ margin:0;
 background:#f4f4f4;
 }
 
-/* HEADER LOGO */
+/* HEADER */
 
 header{
 text-align:center;
-padding:20px;
 background:white;
+padding:20px;
 }
 
 header img{
@@ -42,29 +42,11 @@ margin:0 15px;
 font-weight:bold;
 }
 
-/* HERO SLIDER */
-
-.hero-slider{
-position:relative;
-height:420px;
-overflow:hidden;
-}
-
-.slides{
-display:flex;
-width:300%;
-animation:slide 12s infinite;
-}
-
-.slides img{
-width:100%;
-height:420px;
-object-fit:cover;
-}
+/* HERO */
 
 .hero{
 height:420px;
-background-image:url("hero.jpg");
+background-image:url("hero.jpg.jpg");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -81,7 +63,7 @@ border-radius:10px;
 }
 
 .hero-text h1{
-font-size:42px;
+font-size:40px;
 margin-bottom:10px;
 }
 
@@ -93,20 +75,11 @@ margin-bottom:20px;
 .hero-text button{
 background:#2e7d32;
 color:white;
-padding:12px 28px;
+padding:12px 25px;
 border:none;
 border-radius:6px;
 font-size:16px;
 cursor:pointer;
-}
-
-@keyframes slide{
-
-0%{transform:translateX(0);}
-33%{transform:translateX(-100%);}
-66%{transform:translateX(-200%);}
-100%{transform:translateX(0);}
-
 }
 
 /* SECTIONS */
@@ -162,35 +135,17 @@ text-align:center;
 
 <body>
 
-<!-- LOGO -->
-
 <header>
 <img src="logo.png" alt="NextGen Logo">
 </header>
 
-<!-- MENU -->
-
 <nav>
-
 <a href="#">Home</a>
 <a href="#gallery">Gallery</a>
 <a href="#register">Register</a>
 <a href="#waitlist">Waitlist</a>
 <a href="about.html">NextGen</a>
-
 </nav>
-
-<!-- HERO SLIDER -->
-
-<section class="hero-slider">
-
-<div class="slides">
-
-<img src="slide1.jpg.jpg">
-<img src="slide2.jpg.jpg">
-<img src="slide3.jpg.jpg">
-
-</div>
 
 <section class="hero">
 
@@ -208,21 +163,17 @@ text-align:center;
 
 </section>
 
-<!-- ABOUT -->
-
 <section class="section">
 
 <h2>About Our Daycare</h2>
 
 <p>
-NextGen Daycare provides a safe and nurturing environment where children
-learn through play, creativity, and exploration while developing
-important early childhood skills.
+NextGen Daycare provides a safe and nurturing environment where
+children learn through play, creativity, and exploration while
+developing important early childhood skills.
 </p>
 
 </section>
-
-<!-- GALLERY -->
 
 <section class="section" id="gallery">
 
@@ -239,8 +190,6 @@ important early childhood skills.
 
 </section>
 
-<!-- REGISTRATION -->
-
 <section class="section" id="register">
 
 <h2>Daycare Registration</h2>
@@ -252,8 +201,6 @@ important early childhood skills.
 </a>
 
 </section>
-
-<!-- WAITLIST -->
 
 <section class="section" id="waitlist">
 
@@ -267,18 +214,13 @@ important early childhood skills.
 
 </section>
 
-<!-- CONTACT -->
-
 <section class="contact">
 
 <h2>Contact Us</h2>
 
 <p>NextGen Daycare</p>
-
 <p>Saskatoon, Saskatchewan</p>
-
 <p>Phone: 306-280-8715</p>
-
 <p>Operated by NextGen Global Initiatives Inc.</p>
 
 </section>
