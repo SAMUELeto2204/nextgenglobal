@@ -62,33 +62,41 @@ height:420px;
 object-fit:cover;
 }
 
-.hero-text{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:rgba(0,0,0,0.4);
-padding:40px;
-border-radius:10px;
+.hero{
+height:420px;
+background-image:url("hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
 color:white;
 }
 
+.hero-text{
+background:rgba(0,0,0,0.45);
+padding:40px;
+border-radius:10px;
+}
+
 .hero-text h1{
-font-size:40px;
+font-size:42px;
 margin-bottom:10px;
 }
 
 .hero-text p{
+font-size:18px;
 margin-bottom:20px;
 }
 
 .hero-text button{
 background:#2e7d32;
 color:white;
-padding:12px 25px;
+padding:12px 28px;
 border:none;
 border-radius:6px;
+font-size:16px;
 cursor:pointer;
 }
 
@@ -183,6 +191,8 @@ text-align:center;
 <img src="slide3.jpg.jpg">
 
 </div>
+
+<section class="hero">
 
 <div class="hero-text">
 
